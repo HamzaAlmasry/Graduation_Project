@@ -1,0 +1,99 @@
+
+
+*{padding:0;margin:0;box-sizing:border-box;font-family:'El Messiri',sans-serif;direction:rtl}
+.Car-App{
+    position:relative;top:0;left:0;width:100%;height:100vh;background-color:#d6dce0;position:fixed;z-index:9999;}
+.Car-App .Car-item{
+    position:absolute;
+    top:55%;left:50%;
+    width:95%;height:85vh;transform:translate(-50% ,-50%);
+    display:flex;flex-direction:row;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    background-color:#fff;
+    overflow-y:auto;
+    padding-top:15px;
+    border-radius: 10px;
+  }
+.Car-item::-webkit-scrollbar{width:7px}
+.Car-item::-webkit-scrollbar-track{background-color:transparent;border-radius:25px}
+.Car-item::-webkit-scrollbar-thumb{background-color:#ff6a00;border-radius:25px}
+
+.Car-App-item::-webkit-scrollbar{width:7px}
+.Car-App-item::-webkit-scrollbar-track{background-color:transparent;border-radius:25px}
+.Car-App-item::-webkit-scrollbar-thumb{background-color:#ff6a00;border-radius:25px}
+.Car-App-item{width:95%;height:80vh;border-radius:10px;display:flex;justify-content:space-around;flex-direction:row;flex-wrap:wrap;align-items: center;}
+.FF {width: 600px;height: 100%;}
+.Car-App-item-title{width:600px;height:81%;padding:0 20px;overflow-y:auto}
+.Car-App-item-title::-webkit-scrollbar{width:7px}
+.Car-App-item-title::-webkit-scrollbar-track{background-color:transparent;border-radius:25px}
+.Car-App-item-title::-webkit-scrollbar-thumb{background-color:#ff6a00;border-radius:25px}
+.title-Car{border-bottom:2px solid #5c5858;padding-bottom:10px}
+.title-flex{display:flex;justify-content:space-between;align-items:center;margin-bottom:5px}
+.title-flex p{font-size:17px;font-weight:700}
+.Car-App-item-title ul{list-style:none}
+.Car-App-item-title ul li{display:flex;justify-content:space-between;align-items:center;padding:8px 10px;border-bottom:1px solid #5c5858;font-size:17px;font-weight:700}
+.flexSpan{display:flex;justify-content:space-between;align-items:center}
+.flexSpanclo{display:flex;flex-direction:column}
+.flexSpanclo p:nth-child(2){font-size:14px}
+.title-button-flex{display:flex;justify-content:space-between;margin-top:10px}
+.title-button-flex button{width:175px;padding:5px;font-size:18px;font-weight:700;background-color:#f14d11;border:0;border-radius:5px;transition:.5s ease}
+.title-button-flex button:hover{cursor:pointer;color:#fff}
+.flexSpanclo p:first-child{width:100%;margin-bottom:5px}
+.Car-App-item-title ul li img{width:30px;height:30px;margin-right:5px}
+.swiper-sl{height:100%}
+.swiper-wrappercc{height:100%}
+.cc{width:500px;height:100%;display:flex;align-items:center;justify-content:center;font-size:22px;
+    font-weight:700;color:#fff;background-size:100% 100%;background-repeat:no-repeat;
+    border-radius: 10px;}
+/* .cc:nth-child(1n){background-image:url(../image/car11.jpeg)}
+.cc:nth-child(2n){background-image:url(../imagecar19.jpeg)}
+.cc:nth-child(3n){background-image:url(../image/car12.jpeg)}
+.cc:nth-child(4n){background-image:url(../image/car13.jpeg)}
+.cc:nth-child(5n){background-image:url(../image/car14.jpeg)}
+.cc:nth-child(6n){background-image:url(../image/car15.jpeg)}
+.cc:nth-child(7n){background-image:url(../image/car16.jpeg)}
+.cc:nth-child(8n){background-image:url(../image/car17.jpeg)}
+.cc:nth-child(9n){background-image:url(../image/car18.jpeg)}
+.cc:nth-child(10n){background-image:url(../image/car19.jpeg)} */
+.swiper-button-next:after,.swiper-button-prev:after{position:absolute;bottom:0;left:2px;width:25px;height:25px;line-height:25px;text-align:center;background-color:#000;color:#fff;border-radius:50%;font-size:15px;font-weight:700}
+.swiper-button-next:hover:after,.swiper-button-prev:hover:after{background-color:#f86700}
+.Car-App-item-two{width:95%;height:80vh;border-radius:10px;padding:10px 0;display:flex;flex-direction:row;justify-content:center;flex-wrap:wrap;overflow-y:auto;margin-top: 35px;}
+.Car-App-item-two::-webkit-scrollbar{width:7px}
+.Car-App-item-two::-webkit-scrollbar-track{background-color:transparent;border-radius:25px}
+.Car-App-item-two::-webkit-scrollbar-thumb{background-color:#f56701;border-radius:25px}
+.close{position:absolute;top:5px;right:10px;width:30px;height:30px;background-color:#000;color:#fff;border-radius:50%;text-align:center;line-height:30px;transition:all .5s;font-size:20px;font-weight:600;font-family:none}
+.close:hover{transform:rotate(180deg);cursor:pointer}
+.Car-flex{width:250px;height:300px;background-color:#fff;margin-left:20px;margin-bottom:20px;border:2px solid #817b7b}
+.Car-flex-img{width:100%;height:130px;object-fit:cover}
+.Car-flex-img img{width:100%;height:100%}
+.Car-flex-title{padding:10px}
+.Car-flex-title h1{font-size:16px}
+.Car-flex-title-flex{display:flex;justify-content:space-between;margin:5px 0}
+.Car-flex-title-flex p{ color: #ff8800;font-size: 14px;font-weight: 900;}
+.Car-flex-flex{list-style:none;display:flex;justify-content:space-between;margin:10px 0}
+.Car-flex-flex li i{color:#f14d11}
+.Car-flex-flex li a{font-size:12px}
+.flex-btn{display:flex;justify-content:space-around;margin-top: 14px;}
+.add-cart,.btn-Car-One{width:90%;display:block;padding:5px 0;background-color:#e4650a;border:0;outline:0;border-radius:5px;font-size:16px;font-weight:700;transition:.5s ease;margin:0 5px}
+.add-cart a , .btn-Car-One a {text-decoration: none; color: #000;}
+.add-cart:hover,.btn-Car-One:hover{cursor:pointer;background-color:#ff6b02;color:#fff}
+@media screen and (max-width:1115px){
+.Carfd{width:90% ; height: 56% !important;}
+.FF{width:100%;height:45vh}
+.Car-App-item-title{
+    width: 90%;
+    height: 35vh;
+    padding-bottom: 15px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+.cc{width:100%;height:45vh;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;color:#fff}
+.Car-App-item-two { margin-top: 63px;}
+}
+@media screen and (max-width:620px){
+.title-button-flex{display:flex;flex-direction:column;margin-top:10px}
+.title-button-flex button{width:100%;margin-bottom:10px}
+}
+
+

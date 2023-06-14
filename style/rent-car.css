@@ -1,0 +1,53 @@
+/* Start Home => Rent */
+*{padding:0;margin:0;box-sizing:border-box;font-family:'El Messiri',sans-serif;direction:rtl}
+.Rent-Home{top:0;left:0;width:100%;height:100vh;position:relative}
+.Rent-contrenir{position:absolute;top:55%;left:50%;transform:translate(-50% ,-50%);width:90%;height:85vh;background-color:#cdd1d8;border-radius:10px;padding:20px;display:flex;flex-direction:column;justify-content:center}
+.Rent-contrenir-item-title{text-align:center;margin-bottom:3%}
+.Rent-contrenir-item-title h1{font-size:30px;font-weight:700}
+.Rent-contrenir-item-title p{font-size:20px;font-weight:700;color:#ff6a00!important}
+.Rent-contrenir-item-title h1 .span1{color:#f76700}
+.ani,.ani1{opacity:0}
+.headerh1-animation{animation:slide-in-blurred-right 1.5s cubic-bezier(.23,1,.32,1) .3s both;transition:1s ease}
+.headerh2-animation{animation:slide-in-blurred-right 1.5s cubic-bezier(.23,1,.32,1) .8s both;transition:1s ease}
+.headerh3-animation{animation:slide-in-blurred-right 1.5s cubic-bezier(.23,1,.32,1) 1.5s both;transition:1s ease}
+
+@keyframes slide-in-blurred-right{
+0%{transform:translateX(1000px) scaleX(2.5) scaleY(.2);transform-origin:0% 50%;filter:blur(40px);opacity:0}
+100%{transform:translateX(0) scaleY(1) scaleX(1);transform-origin:50% 50%;filter:blur(0);opacity:1}
+}
+.Rent-contrenir-item-content{height:341px;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;overflow-y:auto;}
+.Rent-contrenir-item-content::-webkit-scrollbar{width:10px}
+.Rent-contrenir-item-content::-webkit-scrollbar-track{background-color:#fff;border-radius:25px;background-color:transparent}
+.Rent-contrenir-item-content::-webkit-scrollbar-thumb{background-color:#cf6400;border-radius:25px}
+.title-flex{display:flex;justify-content:space-between}
+.title-flex h1{font-size:14px}
+.title-flex .title-flex-rent{color:brown}
+@media screen and (max-width:804px){
+.Rent-contrenir-item-title h1{font-size:20px}
+.Rent-contrenir-item-title p{font-size:17px}
+}
+/* End Home => Rent */
+
+.Cart1{position:relative;display: inline-block;width: 100px;height: 40px;margin-top: 10px;line-height: 47px;font-size: 20px;font-weight: 700;color: #000;background-color: #fff;border-radius: 5px;transition: .5s ease;}
+.Cart1:hover{background-color: #ff7b00;cursor: pointer;}
+.Cart1 .cart-num1{position:absolute;top:-11px;right:-11px;width:27px;height:25px;border-radius:50%;background-color:#fffb00;text-align:center;line-height:26px;font-weight:700;color:#000000;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;display: none;}
+.Cart1 i{font-size:23px;border-radius:4px;transition:.5s ease}
+.CartApp1{position:fixed;top:0;right:-100%;width:100%;min-height:100vh;padding:20px;z-index:999999;background-color:#fff;box-shadow:-2px 0 4px hsl(0 4% 15% / 10%);transition:.3s}
+.CartApp1.active{right:0}
+.cart-title1{text-align:center;font-size:1.5rem;font-weight:600;margin-top:2rem}
+.cart-box1{display:grid;grid-template-columns:32% 50% 18%;align-items:center;gap:1rem;margin-top:1rem;border-bottom:2px solid #000;padding-bottom:10px}
+.cart-img1{width:150px;height:100px;object-fit:contain;padding:10px}
+.detail-box1{display:grid;row-gap:.5rem}
+.cart-product-title1{font-size:1rem;text-transform:uppercase}
+.cart-price1{font-weight:500}
+/* .cart-quantity1{border:1px solid #000;outline:0;width:5rem;text-align:center;font-size:1rem} */
+.cart-remove1{font-size:24px;color:#f01515;cursor:pointer}
+.totle1{display:flex;justify-content:flex-start;margin-top:.5rem}
+.totle-title1{font-size:1rem;font-weight:600}
+.totle-price1{margin-right:.5rem}
+.btn-buy1{display:flex;margin:1.5rem auto 0 auto;padding:7px 20px;border:none;background:#eb7304;color:#fff;font-size:1rem;font-weight:500;cursor:pointer;transition:.5s ease}
+.btn-buy1:hover{background-color:#111422}
+#close-cart-two{position:absolute;top:1rem;left:.8rem;font-size:1.5rem;color:#111422;cursor:pointer}
+.add-cart1{width:90%;display:block;padding:5px 0;background-color:#e4650a;border:0;outline:0;border-radius:5px;font-size:16px;font-weight:700;transition:.5s ease;margin:0 5px}
+.add-cart1:hover{cursor:pointer;background-color:#ff6b02;color:#fff}
+@media screen and (max-width:450px){.cart-img1 {width: 100px;}}

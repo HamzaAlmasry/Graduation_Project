@@ -1,0 +1,101 @@
+/* Start Home => About */
+
+*{padding:0;margin:0;box-sizing:border-box;font-family:'El Messiri',sans-serif;direction:rtl}
+.Header{z-index:99999}
+.car-About{position:relative;top:0;left:0;width:100%;height:100vh;overflow:hidden}
+.car-About .contrenir-itemr{position:absolute;top:13%;left:50%;width:90%;height:85vh;transform:translate(-50%,0);border-radius:10px;display:flex;justify-content:center;flex-direction:column;background-color:#cdd1d8;overflow:hidden}
+.contrenir-itemr .title-About{width:400px;height:400px;float:left;position:relative}
+.contrenir-itemr::after{content:"";position:absolute;top:0;left:0;width:80%;height:90%;clip-path:circle(50% at 4% 19%);background-color:rgb(255 152 59);z-index:-1}
+.title-About img{position:absolute;top:50%;left:50%;transform:translate(-50% ,-50%);width:380px;height:324px}
+.contrenir-itemr .title-About-two{width:50%;height:100%;position:relative}
+.title-About-two .title-About-two-img{position:absolute;top:50%;right:0;transform:translate(0 ,-50%);padding:10px}
+.title-About-two-img .span{color:#ff703d}
+.title-About-two-img h1{font-size:35px;text-transform:capitalize;margin-bottom:10px;opacity:0}
+.about-animate-h1{animation:slide-in-blurred-right 1s cubic-bezier(.23,1,.32,1) .4s both}
+.title-About-two-img p{font-size:20px;color:#363738;font-weight:700;opacity:0}
+.about-animate-Two{animation:slide-in-blurred-right 1s cubic-bezier(.23,1,.32,1) .8s both}
+.title-About-two-img p:nth-child(3){margin:10px 0 20px;opacity:0}
+.about-animate-pOne{animation:slide-in-blurred-right 1s cubic-bezier(.23,1,.32,1) 1.2s both}
+.title-About-two-img a{font-size:15px;font-weight:700;color:#fff;background-color:#ff983b;border:0;outline:0;padding:5px 10px;border-radius:3px;transition:.5s ease-in-out;cursor:pointer;text-decoration:none;opacity:0;transition: all 0.5s;}
+.title-About-two-img a:hover{background-color:#fc7601;}
+.about-animate-a{animation:slide-in-blurred-right 1s cubic-bezier(.23,1,.32,1) 1.6s both}
+.shadow-BoxAbout{background-color:#1f243d59!important}
+.Color{color:#fff!important}
+@keyframes slide-in-blurred-right{
+0%{transform:translateX(1000px) scaleX(2.5) scaleY(.2);transform-origin:0% 50%;filter:blur(40px);opacity:0}
+100%{transform:translateX(0) scaleY(1) scaleX(1);transform-origin:50% 50%;filter:blur(0);opacity:1}
+}
+@media screen and (max-width:995px){
+.car-About .contrenir-itemr{width:90%}
+.title-About::after{content:"";width:649px;height:358px}
+.title-About img{position:absolute;top:34%;left:34%;width:300px;height:250px}
+.contrenir-itemr .title-About{height:201px;top:-68px}
+.contrenir-itemr .title-About-two{width:100%;top:150px}
+}
+@media screen and (max-width:490px){
+.contrenir{width:95%}
+.title-About-two-img h1{font-size:20px;margin-bottom:10px}
+.title-About-two-img p{font-size:16px}
+.contrenir-itemr .title-About-two{margin:0;width:100%;top:150px}
+.title-About img{top:34%;left:43%;width:265px;height:212px}
+}
+@media screen and (orientation:landscape) and (max-height:414px){
+.car-About .contrenir-itemr{top:15%;height:80vh}
+.contrenir-itemr::after{width:357px;height:484px}
+.title-About img{position:absolute;top:86%;left:39%;width:231px;height:225px}
+.contrenir-itemr .title-About-two{width:60%;top:0}
+.title-About-two-img p:nth-child(3){margin:10px 0}
+.title-About-two-img p{font-size:1.1em}
+.title-About-two-img h1{font-size:2.3em}
+.title-About-two-img a{display:inline-block;margin-top:10px}
+}
+@media screen and (orientation:landscape) and (max-height:375px){
+.contrenir-itemr::after{width:246px;height:389px}
+.title-About img{top:85%;left:30%;width:204px;height:192px}
+.title-About-two-img h1{font-size:1.3em}
+.title-About-two-img p{font-size:1em}
+.title-About-two-img a{padding:5px 10px;margin-top:3px}
+}
+
+/* End Home => About */
+
+
+
+/* Start About => Home */
+
+.about-Home-App{position:relative;top:0;left:0;width:100%;height:100vh}
+.about-Home{position:absolute;top:13vh;left:50%;width:90%;height:85vh;transform:translate(-50%,0);border-radius:10px;padding:20px 10px;overflow-y:auto;background-color:#eeeff1}
+.about-Home::-webkit-scrollbar{width:10px}
+.about-Home::-webkit-scrollbar-track{border-radius:25px;background-color:transparent}
+.about-Home::-webkit-scrollbar-thumb{background-color:#d36600;border-radius:25px}
+.about-Home h1 .span{color:#f40}
+.about-blus{width:100%}
+.about-blus h1{font-weight:700;margin:20px 0;position:relative}
+.about-blus h1::after{content:"";position:absolute;right:0;bottom:-4px;width:100px;height:3px;background-color:#f40}
+.about-blus ul{list-style-position:inside;list-style-type:decimal;line-height:37px}
+.about-blus ul li{font-size:20px;font-weight:600}
+.about-Home .about-video{margin-top:20px}
+.about-Home .about-video video{width:100%;height:100%;object-fit:cover}
+.questions{position:relative;top:0;left:0;width:100%;height:100vh;overflow:hidden}
+.questions-item{position:absolute;top:12vh;left:50%;width:90%;height:85vh;transform:translate(-50%,0);border-radius:10px;background-color:#eeeff1;overflow:hidden;padding:20px}
+.questions-title h1{position:relative;font-weight:900;font-size:30px}
+.questions-title h1::after{content:"";position:absolute;right:0;bottom:2px;width:100px;height:3px;background-color:#f40}
+.questions-title p{margin:10px 0;font-size:20px;font-weight:500}
+.accordion{width:100%;display:block;margin:20px auto;padding:30px;height:417px;overflow-y:scroll}
+.accordion::-webkit-scrollbar{width:10px}
+.accordion::-webkit-scrollbar-track{border-radius:25px;background-color:transparent}
+.accordion::-webkit-scrollbar-thumb{background-color:#d36600;border-radius:25px}
+.accordion-app-item{width:100%;margin:0 auto 4px auto}
+.accordion-item{width:100%;background-color:#2828d1;display:flex;justify-content:space-between;color:#fff;padding:10px;border-radius:6px}
+.accordion-item h1{font-size:20px}
+.add{font-size:20px;font-weight:700;cursor:pointer}
+.add:hover{color:#ffd900}
+.accordion-app-item>.content{font-size:17px;font-weight:700;background-color:rgba(146,146,180,.555);padding:12px 10px 36px 10px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;border-bottom:2px solid rgba(0,0,255,.623);height:0;opacity:0;transition:all .3s}
+.ctive{opacity:1!important}
+@media (max-width:537px){
+.accordion-item h1{font-size:13px;margin-top:5px}
+.accordion-item{padding:5px 10px}
+.accordion-app-item>.content{font-size:12px}
+}
+/* End About => Home */
+

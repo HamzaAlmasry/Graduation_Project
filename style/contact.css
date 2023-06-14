@@ -1,0 +1,74 @@
+/* Start Home => Contact */
+
+*{padding:0;margin:0;box-sizing:border-box;font-family:'El Messiri',sans-serif;direction:rtl}
+.contact-Home{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.contact-contrenir{width:90%;height:100%;background-color:#cdd1d8;border-radius:10px;padding:20px;display:flex;flex-direction:column;justify-content:center;align-items:center;margin:80px 0 20px 0}
+.form{grid-area:form}
+.info{grid-area:info}
+.map{grid-area:map}
+.contact{padding:10px;background-color:#fff;border-radius: 10px;overflow: hidden;}
+.box{width:100%;display:grid;grid-template-columns:2fr 1fr;grid-template-rows:5fr 4fr;grid-template-areas:"form info" "form map";grid-gap:20px}
+.contact h3{color:#fd6a00;font-weight:500;font-size:1.4em;margin-bottom:10px}
+.formBox{position:relative;width:100%}
+.formBox .row50{display:flex;gap:20px}
+.inputBox{display:flex;flex-direction:column;margin-bottom:5px;width:50%}
+.formBox .row100 .inputBox{width:100%}
+.inputBox span{color:#ff6b01;margin:5px 0 5px 0;font-weight:500}
+.inputBox input{padding:5px;font-size:1.1em;font-weight:700;outline:0;border:1px solid #333;border-radius: 5px;}
+.inputBox textarea{padding:5px;font-size:1.1em;outline:0;border:1px solid #333;resize:none;min-height:200px; border-radius: 5px;}
+.inputBox input[type=submit]{background-color:#fc6901;color:#fff;border:none;font-size:1.1em;max-width:120px;font-weight:500;cursor:pointer}
+.inputBox ::placeholder{color:#868080}
+.info{background-color:#0e3959}
+.info .infoBox div{display:flex;align-items:center;margin-bottom:8px}
+.info .infoBox div span{min-width:30px;height:30px;color:#fff;background-color:#fa6d08;display:flex;align-items:center;justify-content:center;font-size:1em;border-radius:50%}
+.info .infoBox div p{color:#fff;margin-right:10px;font-size:1em}
+.info .infoBox div a{color:#fff;margin-right:10px;text-decoration:none;font-size:1em}
+.sci{display:flex;margin-top:20px}
+.sci li{list-style:none;margin-left:15px}
+.sci li a{color:#ccc;font-size:2em}
+.sci li a:hover{color:#ff9100}
+.map{padding:0}
+.map iframe{width:100%;height:100%}
+@media (max-width:991px){
+.box{grid-template-columns:1fr;grid-template-rows:auto;grid-template-areas:"form" "info" "map"}
+.formBox .row50{display:flex;flex-direction:column;gap:0}
+.inputBox{width:100%}
+.map{min-height:300px;padding:0}
+}
+
+/* End Home => Contact */
+
+/* Start Home => footer */
+footer{position:relative;width:100%;height:auto;padding:50px 100px;background-color:#111;display:flex;justify-content:space-between;flex-wrap:wrap}
+footer .contrenirr{display:flex;justify-content:space-between;flex-wrap:wrap;flex-direction:row}
+footer .contrenirr .sec{margin-right:30px}
+footer .contrenirr .sec.aboutus{width:40%}
+footer .contrenirr h2{position:relative;color:#ff9100;font-weight:500;margin-bottom:15px}
+footer .contrenirr h2::before{content:'';position:absolute;bottom:-3px;right:0;width:50px;height:2px;background-color:#eeeff1}
+footer p{color:#999}
+.scii{margin-top:20px;display:flex}
+.scii li{list-style:none}
+.scii li a{display:inline-block;width:40px;height:40px;background-color:#222;display:flex;justify-content:center;align-items:center;margin-left:10px;text-decoration:none;border-radius:4px}
+.scii li a:hover{background-color:#ff9100}
+.scii li a i{color:#fff;font-size:20px}
+.quickLinks{position:relative;width:25%}
+.quickLinks ul li{list-style:none}
+.quickLinks ul li a{color:#999;text-decoration:none;margin-bottom:10px;display:inline-block}
+.quickLinks ul li a:hover{color:#fff}
+.contact-fo{width:calc(35% - 60px);margin-right:0!important}
+.contact-fo .info-fo{position:relative}
+.contact-fo .info-fo li{display:flex;margin-bottom:16px}
+.contact-fo .info-fo li span:first-child{color:#fff;font-size:20px;margin-left:10px}
+.contact-fo .info-fo li span{color:#999}
+.contact-fo .info-fo li a{color:#999;text-decoration:none}
+.contact-fo .info-fo li a:hover{color:#fff}
+.copyrightText{width:100%;background-color:#181818;padding:8px 100px;text-align:center;color:#999}
+@media (max-width:991px){
+footer{padding:40px}
+footer .contrenirr{flex-direction:column}
+footer .contrenirr .sec{margin-right:0;margin-bottom:40px}
+.contact-fo,.quickLinks,footer .contrenirr .sec.aboutus{width:100%}
+.copyrightText{padding:8px 40px}
+}
+/* End Home => footer */
+

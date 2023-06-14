@@ -1,0 +1,299 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'El Messiri', sans-serif;
+    direction: rtl;
+}
+.body{
+    background-color: #9E9E9E;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.form-item{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 90%;
+    width: 350px;
+    border-radius: 7px;
+    background-color: white;
+    padding: 10px 0;
+}
+.close{
+    position: absolute;
+    top: -14px;
+    right: -10px;
+    width: 30px ;
+    height: 30px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50%;
+    transition: all 0.5s;
+    font-family: none;
+}
+.close:hover{
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.logn{
+    text-align: center;
+    /* margin-bottom: 10px; */
+    font-size: 30px;
+    font-weight: 900;
+}
+.logn h1 , .span2 {
+    font-size: 29px;
+    font-weight: bold;
+}
+.logn h1 .span2{
+    color: rgb(255, 123, 0);
+}
+.papa{
+    width: 100%;
+    padding: 5px 15px;
+    position: relative;
+}
+.papa i {
+    position: absolute;
+    top: 45%;
+    left: 22px;
+    transform: translateY(-50%);
+    font-size: 19px;
+}
+.papa label{
+    display: inline-block;
+    margin-bottom: 3px;
+    text-align: right;
+    font-size: 15px;
+    font-weight: bold;
+}
+.papa input{
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    outline: 0;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #cac7c3;
+    border-radius: 5px;
+}
+.papa input:focus {
+    background-color: #d6d3cd;
+}
+
+.btn-logn{
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 800;
+    border: 0;
+    outline: 0;
+    padding: 5px 7px;
+    background-color: rgb(206, 128, 56);
+    border-radius: 5px;
+}
+.btn-logn:disabled{
+    cursor:not-allowed;
+}
+.password-Farget{
+    margin: 7px 0;
+}
+.password-Farget a{
+    color: rgb(224, 156, 66);
+    text-decoration: none;
+    font-weight: bold;
+}
+.password-Farget a:hover{
+    color: rgb(255, 154, 3);
+}
+.Create{
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.Create p{
+    font-weight: bold;
+}
+.Create .Create-Account{
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+    padding: 5px 10px ;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(228, 142, 12);
+    border-radius: 3px;
+    transition: 0.5s ease;
+    text-decoration: none;
+    color: black;
+}
+.Create .Create-Account:hover{
+    cursor: pointer;
+    color: white;
+}
+
+
+/*  */
+.form-item-two{   
+    padding: 0;
+}
+.form-item-two .logn {
+   margin-bottom: 5px;
+   font-size: 20px;
+}
+
+.form-item-two .papaApp{
+    display: flex;
+}
+.flex{
+    display: flex;
+}
+.form-item-two .papa {
+   padding: 2px 10px;
+}
+.form-item-two .papaApp > .papa{
+   width: 50%;
+}
+
+.form-item-two .btn-logn {
+   margin: 3px auto;
+}
+.papa-paragr , .papa-paragr2 {
+   color: #ff0000;
+   font-size: 12px;
+   font-weight: bold;
+   display: none;
+}
+.form-item-two .Create{
+   margin-top: 10px;
+}
+.form-item-two .Create button{
+   padding: 5px 8px;
+}
+.papa .pas-icon {
+    top: 43px;
+}
+.error {
+    border: 2px solid red !important;
+}
+.success{
+    border: 2px solid #04AA6D !important;
+}
+
+.line{
+    position: relative;
+    height: 1px;
+    width: 95%;
+    background-color: #525150;
+    margin: 20px auto;
+}
+.line::before{
+    content: "On";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: white;
+    color: black;
+    padding: 0 15px;
+    border-radius: 50%;
+}
+.media-options {
+    width: 95%;
+    margin: 0 auto;
+    padding: 8px 0;
+    background-color:rgb(59, 59, 172);
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 11px;
+}
+.media-options:hover{
+    background-color:blue;
+}
+.media-options a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+}
+.media-options a i{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 29px;
+    color: white;
+}
+.media-options a span{
+    font-weight: bold;
+    color: white;
+}
+.Google{
+    background-color: rgb(202, 195, 195);
+}
+.Google:hover{
+    background-color: rgb(160, 153, 153);
+}
+.Google a i{
+    color: rgb(0, 32, 211);
+}
+.Google a span{
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+}
+#ero{
+    color: #ff0000;
+    font-size: 12px;
+    font-weight: bold;
+}
+@media screen and (orientation:landscape) and ( max-height:414px) {
+
+    .form-item-two{  
+        width: 90%;
+    }
+    .form-item-two .logn {
+        margin-bottom: 0px;
+    }
+    .papa label {
+        margin-bottom: 0px;
+    }
+    .flex1{
+        display: flex;
+    }
+    .papa .pas-icon {
+        top: 42px;
+    }
+    .btn-logn {
+        width: 95%;
+    }
+    .form-item-two .Create{
+        width: 95%;
+        margin-top: 5px;
+     }
+     .media-options {
+        width: 45%
+     }
+     .line {
+        margin: 10px auto;
+    }
+    .media-options a span {
+        font-size: 13px;
+    }
+
+}
+
+
+
+
